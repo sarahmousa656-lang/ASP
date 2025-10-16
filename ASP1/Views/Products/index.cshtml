@@ -1,0 +1,16 @@
+@model List<ASP1.Models.Product>
+
+<h1>Product List</h1>
+
+<ul>
+@foreach (var p in Model)
+{
+    <li>
+        <a href="/Products/Details/@p.Id">@p.Name</a> - @p.Price SAR
+    </li>
+}
+</ul>
+
+            
+                
+                
